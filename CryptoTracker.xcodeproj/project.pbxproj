@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20168FC7136F97B1C5A24692 /* Pods_CryptoTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123F641A3D4CE66B4114E886 /* Pods_CryptoTrackerTests.framework */; };
+		59DD224AF4A35C5D6863ADB5 /* Pods_CryptoTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC51BC870244E9A32D52283 /* Pods_CryptoTracker.framework */; };
+		5C59A4A828DF2215007DF8E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59A4A728DF2215007DF8E1 /* AppDelegate.swift */; };
+		5C59A4AA28DF2215007DF8E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59A4A928DF2215007DF8E1 /* SceneDelegate.swift */; };
+		5C59A4AC28DF2215007DF8E1 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59A4AB28DF2215007DF8E1 /* CryptoViewController.swift */; };
+		5C59A4B128DF2216007DF8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C59A4B028DF2216007DF8E1 /* Assets.xcassets */; };
+		5C59A4B428DF2216007DF8E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C59A4B228DF2216007DF8E1 /* LaunchScreen.storyboard */; };
+		5C59A4BF28DF2216007DF8E1 /* CryptoTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59A4BE28DF2216007DF8E1 /* CryptoTrackerTests.swift */; };
+		5C59A4C928DF2216007DF8E1 /* CryptoTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59A4C828DF2216007DF8E1 /* CryptoTrackerUITests.swift */; };
+		5C59A4CB28DF2216007DF8E1 /* CryptoTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59A4CA28DF2216007DF8E1 /* CryptoTrackerUITestsLaunchTests.swift */; };
+		5C59A4D828DF24FE007DF8E1 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59A4D728DF24FE007DF8E1 /* APICaller.swift */; };
+		5C59A4DA28DF25D5007DF8E1 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59A4D928DF25D5007DF8E1 /* CryptoTableViewCell.swift */; };
+		5C59A4DC28DF3BF6007DF8E1 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59A4DB28DF3BF6007DF8E1 /* APIModels.swift */; };
+		DC282D85BB6238D815EDB868 /* Pods_CryptoTracker_CryptoTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD835A0570C56DE9ACF3F51 /* Pods_CryptoTracker_CryptoTrackerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C59A4BB28DF2216007DF8E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C59A49C28DF2215007DF8E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C59A4A328DF2215007DF8E1;
+			remoteInfo = CryptoTracker;
+		};
+		5C59A4C528DF2216007DF8E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C59A49C28DF2215007DF8E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C59A4A328DF2215007DF8E1;
+			remoteInfo = CryptoTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		123F641A3D4CE66B4114E886 /* Pods_CryptoTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F9CAD2B5FF5DF13E788B21 /* Pods-CryptoTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTracker.release.xcconfig"; path = "Target Support Files/Pods-CryptoTracker/Pods-CryptoTracker.release.xcconfig"; sourceTree = "<group>"; };
+		4BC51BC870244E9A32D52283 /* Pods_CryptoTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		565B9F894D1AE7CF38446C05 /* Pods-CryptoTracker-CryptoTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTracker-CryptoTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-CryptoTracker-CryptoTrackerUITests/Pods-CryptoTracker-CryptoTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C59A4A428DF2215007DF8E1 /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C59A4A728DF2215007DF8E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C59A4A928DF2215007DF8E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5C59A4AB28DF2215007DF8E1 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
+		5C59A4B028DF2216007DF8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C59A4B328DF2216007DF8E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C59A4B528DF2216007DF8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C59A4BA28DF2216007DF8E1 /* CryptoTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C59A4BE28DF2216007DF8E1 /* CryptoTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerTests.swift; sourceTree = "<group>"; };
+		5C59A4C428DF2216007DF8E1 /* CryptoTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C59A4C828DF2216007DF8E1 /* CryptoTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerUITests.swift; sourceTree = "<group>"; };
+		5C59A4CA28DF2216007DF8E1 /* CryptoTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C59A4D728DF24FE007DF8E1 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		5C59A4D928DF25D5007DF8E1 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		5C59A4DB28DF3BF6007DF8E1 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+		6A7952D940E869323804EB5E /* Pods-CryptoTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoTrackerTests/Pods-CryptoTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DFF76939CAB6A2C0D0B38C9 /* Pods-CryptoTracker-CryptoTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTracker-CryptoTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoTracker-CryptoTrackerUITests/Pods-CryptoTracker-CryptoTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A025640B9BB8AB24A56D7CE7 /* Pods-CryptoTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTracker.debug.xcconfig"; path = "Target Support Files/Pods-CryptoTracker/Pods-CryptoTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		B893AC2E0AFFF16E5CF70EFD /* Pods-CryptoTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-CryptoTrackerTests/Pods-CryptoTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDD835A0570C56DE9ACF3F51 /* Pods_CryptoTracker_CryptoTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoTracker_CryptoTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C59A4A128DF2215007DF8E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59DD224AF4A35C5D6863ADB5 /* Pods_CryptoTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C59A4B728DF2216007DF8E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20168FC7136F97B1C5A24692 /* Pods_CryptoTrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C59A4C128DF2216007DF8E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC282D85BB6238D815EDB868 /* Pods_CryptoTracker_CryptoTrackerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12DED9214B96BE42460C93AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BC51BC870244E9A32D52283 /* Pods_CryptoTracker.framework */,
+				BDD835A0570C56DE9ACF3F51 /* Pods_CryptoTracker_CryptoTrackerUITests.framework */,
+				123F641A3D4CE66B4114E886 /* Pods_CryptoTrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24C5DA4404304C7162D96F56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A025640B9BB8AB24A56D7CE7 /* Pods-CryptoTracker.debug.xcconfig */,
+				17F9CAD2B5FF5DF13E788B21 /* Pods-CryptoTracker.release.xcconfig */,
+				8DFF76939CAB6A2C0D0B38C9 /* Pods-CryptoTracker-CryptoTrackerUITests.debug.xcconfig */,
+				565B9F894D1AE7CF38446C05 /* Pods-CryptoTracker-CryptoTrackerUITests.release.xcconfig */,
+				6A7952D940E869323804EB5E /* Pods-CryptoTrackerTests.debug.xcconfig */,
+				B893AC2E0AFFF16E5CF70EFD /* Pods-CryptoTrackerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5C59A49B28DF2215007DF8E1 = {
+			isa = PBXGroup;
+			children = (
+				5C59A4A628DF2215007DF8E1 /* CryptoTracker */,
+				5C59A4BD28DF2216007DF8E1 /* CryptoTrackerTests */,
+				5C59A4C728DF2216007DF8E1 /* CryptoTrackerUITests */,
+				5C59A4A528DF2215007DF8E1 /* Products */,
+				24C5DA4404304C7162D96F56 /* Pods */,
+				12DED9214B96BE42460C93AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5C59A4A528DF2215007DF8E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C59A4A428DF2215007DF8E1 /* CryptoTracker.app */,
+				5C59A4BA28DF2216007DF8E1 /* CryptoTrackerTests.xctest */,
+				5C59A4C428DF2216007DF8E1 /* CryptoTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C59A4A628DF2215007DF8E1 /* CryptoTracker */ = {
+			isa = PBXGroup;
+			children = (
+				5C59A4DD28DF3CC8007DF8E1 /* Application */,
+				5C59A4DE28DF3CDD007DF8E1 /* CryptoViewController */,
+				5C59A4DF28DF3CF9007DF8E1 /* API */,
+				5C59A4B028DF2216007DF8E1 /* Assets.xcassets */,
+				5C59A4B228DF2216007DF8E1 /* LaunchScreen.storyboard */,
+				5C59A4B528DF2216007DF8E1 /* Info.plist */,
+			);
+			path = CryptoTracker;
+			sourceTree = "<group>";
+		};
+		5C59A4BD28DF2216007DF8E1 /* CryptoTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C59A4BE28DF2216007DF8E1 /* CryptoTrackerTests.swift */,
+			);
+			path = CryptoTrackerTests;
+			sourceTree = "<group>";
+		};
+		5C59A4C728DF2216007DF8E1 /* CryptoTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C59A4C828DF2216007DF8E1 /* CryptoTrackerUITests.swift */,
+				5C59A4CA28DF2216007DF8E1 /* CryptoTrackerUITestsLaunchTests.swift */,
+			);
+			path = CryptoTrackerUITests;
+			sourceTree = "<group>";
+		};
+		5C59A4DD28DF3CC8007DF8E1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5C59A4A728DF2215007DF8E1 /* AppDelegate.swift */,
+				5C59A4A928DF2215007DF8E1 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5C59A4DE28DF3CDD007DF8E1 /* CryptoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5C59A4AB28DF2215007DF8E1 /* CryptoViewController.swift */,
+				5C59A4D928DF25D5007DF8E1 /* CryptoTableViewCell.swift */,
+			);
+			path = CryptoViewController;
+			sourceTree = "<group>";
+		};
+		5C59A4DF28DF3CF9007DF8E1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5C59A4D728DF24FE007DF8E1 /* APICaller.swift */,
+				5C59A4DB28DF3BF6007DF8E1 /* APIModels.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C59A4A328DF2215007DF8E1 /* CryptoTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C59A4CE28DF2216007DF8E1 /* Build configuration list for PBXNativeTarget "CryptoTracker" */;
+			buildPhases = (
+				174425DC4DD216ADB509542D /* [CP] Check Pods Manifest.lock */,
+				5C59A4A028DF2215007DF8E1 /* Sources */,
+				5C59A4A128DF2215007DF8E1 /* Frameworks */,
+				5C59A4A228DF2215007DF8E1 /* Resources */,
+				18A3356B23A45A65D777E43E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoTracker;
+			productName = CryptoTracker;
+			productReference = 5C59A4A428DF2215007DF8E1 /* CryptoTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C59A4B928DF2216007DF8E1 /* CryptoTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C59A4D128DF2216007DF8E1 /* Build configuration list for PBXNativeTarget "CryptoTrackerTests" */;
+			buildPhases = (
+				2E8F48ADB211363C30ED68A8 /* [CP] Check Pods Manifest.lock */,
+				5C59A4B628DF2216007DF8E1 /* Sources */,
+				5C59A4B728DF2216007DF8E1 /* Frameworks */,
+				5C59A4B828DF2216007DF8E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C59A4BC28DF2216007DF8E1 /* PBXTargetDependency */,
+			);
+			name = CryptoTrackerTests;
+			productName = CryptoTrackerTests;
+			productReference = 5C59A4BA28DF2216007DF8E1 /* CryptoTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5C59A4C328DF2216007DF8E1 /* CryptoTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C59A4D428DF2216007DF8E1 /* Build configuration list for PBXNativeTarget "CryptoTrackerUITests" */;
+			buildPhases = (
+				04795B382137DD4A33F5A8B1 /* [CP] Check Pods Manifest.lock */,
+				5C59A4C028DF2216007DF8E1 /* Sources */,
+				5C59A4C128DF2216007DF8E1 /* Frameworks */,
+				5C59A4C228DF2216007DF8E1 /* Resources */,
+				F8C5FFB40D124171B51C5CB7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C59A4C628DF2216007DF8E1 /* PBXTargetDependency */,
+			);
+			name = CryptoTrackerUITests;
+			productName = CryptoTrackerUITests;
+			productReference = 5C59A4C428DF2216007DF8E1 /* CryptoTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C59A49C28DF2215007DF8E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					5C59A4A328DF2215007DF8E1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					5C59A4B928DF2216007DF8E1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 5C59A4A328DF2215007DF8E1;
+					};
+					5C59A4C328DF2216007DF8E1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 5C59A4A328DF2215007DF8E1;
+					};
+				};
+			};
+			buildConfigurationList = 5C59A49F28DF2215007DF8E1 /* Build configuration list for PBXProject "CryptoTracker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C59A49B28DF2215007DF8E1;
+			productRefGroup = 5C59A4A528DF2215007DF8E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C59A4A328DF2215007DF8E1 /* CryptoTracker */,
+				5C59A4B928DF2216007DF8E1 /* CryptoTrackerTests */,
+				5C59A4C328DF2216007DF8E1 /* CryptoTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C59A4A228DF2215007DF8E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C59A4B428DF2216007DF8E1 /* LaunchScreen.storyboard in Resources */,
+				5C59A4B128DF2216007DF8E1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C59A4B828DF2216007DF8E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C59A4C228DF2216007DF8E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04795B382137DD4A33F5A8B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoTracker-CryptoTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		174425DC4DD216ADB509542D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18A3356B23A45A65D777E43E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoTracker/Pods-CryptoTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoTracker/Pods-CryptoTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoTracker/Pods-CryptoTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E8F48ADB211363C30ED68A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8C5FFB40D124171B51C5CB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoTracker-CryptoTrackerUITests/Pods-CryptoTracker-CryptoTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoTracker-CryptoTrackerUITests/Pods-CryptoTracker-CryptoTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoTracker-CryptoTrackerUITests/Pods-CryptoTracker-CryptoTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C59A4A028DF2215007DF8E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C59A4DC28DF3BF6007DF8E1 /* APIModels.swift in Sources */,
+				5C59A4AC28DF2215007DF8E1 /* CryptoViewController.swift in Sources */,
+				5C59A4A828DF2215007DF8E1 /* AppDelegate.swift in Sources */,
+				5C59A4AA28DF2215007DF8E1 /* SceneDelegate.swift in Sources */,
+				5C59A4DA28DF25D5007DF8E1 /* CryptoTableViewCell.swift in Sources */,
+				5C59A4D828DF24FE007DF8E1 /* APICaller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C59A4B628DF2216007DF8E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C59A4BF28DF2216007DF8E1 /* CryptoTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C59A4C028DF2216007DF8E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C59A4CB28DF2216007DF8E1 /* CryptoTrackerUITestsLaunchTests.swift in Sources */,
+				5C59A4C928DF2216007DF8E1 /* CryptoTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C59A4BC28DF2216007DF8E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C59A4A328DF2215007DF8E1 /* CryptoTracker */;
+			targetProxy = 5C59A4BB28DF2216007DF8E1 /* PBXContainerItemProxy */;
+		};
+		5C59A4C628DF2216007DF8E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C59A4A328DF2215007DF8E1 /* CryptoTracker */;
+			targetProxy = 5C59A4C528DF2216007DF8E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C59A4B228DF2216007DF8E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C59A4B328DF2216007DF8E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C59A4CC28DF2216007DF8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C59A4CD28DF2216007DF8E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C59A4CF28DF2216007DF8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A025640B9BB8AB24A56D7CE7 /* Pods-CryptoTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 224PZFJN34;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoTracker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyaMishin.CryptoTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C59A4D028DF2216007DF8E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F9CAD2B5FF5DF13E788B21 /* Pods-CryptoTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 224PZFJN34;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoTracker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyaMishin.CryptoTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5C59A4D228DF2216007DF8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A7952D940E869323804EB5E /* Pods-CryptoTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 224PZFJN34;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyaMishin.CryptoTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoTracker.app/CryptoTracker";
+			};
+			name = Debug;
+		};
+		5C59A4D328DF2216007DF8E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B893AC2E0AFFF16E5CF70EFD /* Pods-CryptoTrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 224PZFJN34;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyaMishin.CryptoTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoTracker.app/CryptoTracker";
+			};
+			name = Release;
+		};
+		5C59A4D528DF2216007DF8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DFF76939CAB6A2C0D0B38C9 /* Pods-CryptoTracker-CryptoTrackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 224PZFJN34;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyaMishin.CryptoTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoTracker;
+			};
+			name = Debug;
+		};
+		5C59A4D628DF2216007DF8E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 565B9F894D1AE7CF38446C05 /* Pods-CryptoTracker-CryptoTrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 224PZFJN34;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyaMishin.CryptoTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C59A49F28DF2215007DF8E1 /* Build configuration list for PBXProject "CryptoTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C59A4CC28DF2216007DF8E1 /* Debug */,
+				5C59A4CD28DF2216007DF8E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C59A4CE28DF2216007DF8E1 /* Build configuration list for PBXNativeTarget "CryptoTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C59A4CF28DF2216007DF8E1 /* Debug */,
+				5C59A4D028DF2216007DF8E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C59A4D128DF2216007DF8E1 /* Build configuration list for PBXNativeTarget "CryptoTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C59A4D228DF2216007DF8E1 /* Debug */,
+				5C59A4D328DF2216007DF8E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C59A4D428DF2216007DF8E1 /* Build configuration list for PBXNativeTarget "CryptoTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C59A4D528DF2216007DF8E1 /* Debug */,
+				5C59A4D628DF2216007DF8E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C59A49C28DF2215007DF8E1 /* Project object */;
+}
