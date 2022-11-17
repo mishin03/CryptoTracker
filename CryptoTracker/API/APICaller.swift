@@ -15,18 +15,6 @@ class APICaller {
     
     var icons = [Icon]()
     
-    var cryptosFiltered = [Crypto]()
-    
-    var crypto = [Crypto]()
-    
-    func filterCryptos(text: String) {
-        cryptosFiltered.removeAll()
-        
-        cryptosFiltered = crypto.filter({ (crypto) -> Bool in
-            return crypto.name!.lowercased().contains(text.lowercased())
-        })
-    }
-    
     var whenReadyBlock: ((Result<[Crypto], Error>) -> Void)?
     
     func getAllCrytos(completion: @escaping (Result<[Crypto], Error>) -> Void) {
@@ -41,7 +29,6 @@ class APICaller {
                 completion(.success(cryptos.filter({ crypto in
                     crypto.id_icon != nil
                 })))
-                self.crypto = cryptos
             } catch {
                 completion(.failure(error))
             }

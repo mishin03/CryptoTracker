@@ -34,8 +34,9 @@ class CryptoViewController: UIViewController {
         
         return numberFormatter
     }()
-    
-    var viewModels = [CryptoTableViewCellModel]()
+        
+    var allItems = [CryptoTableViewCellModel]()
+    var currentItems = [CryptoTableViewCellModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +64,7 @@ class CryptoViewController: UIViewController {
             guard let self else { return }
             switch result {
             case .success(let models):
-                self.viewModels = models.map({ model in
+                self.allItems = models.map({ model in
                     let price = model.price_usd ?? 0
                     let formatter = self.numberFormatter
                     let priceString = formatter.string(from: NSNumber(value: price))
@@ -72,6 +73,7 @@ class CryptoViewController: UIViewController {
                     }).first?.url ?? "")
                     return CryptoTableViewCellModel(name: model.name ?? "", symbol: model.asset_id ?? "", price: priceString ?? "", iconUrl: iconUrl)
                 })
+                self.currentItems = self.allItems
                 DispatchQueue.main.async {
                     self.spinner.stopAnimating()
                     self.tableView.reloadData()
@@ -86,28 +88,10 @@ class CryptoViewController: UIViewController {
 extension CryptoViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CryptoTableViewCell.identifier, for: indexPath) as? CryptoTableViewCell else { fatalError() }
-
-        var crypto: Crypto
         if isSearch() {
-            crypto = APICaller.shared.cryptosFiltered[indexPath.row]
+            cell.configure(with: currentItems[indexPath.row])
         } else {
-            crypto = APICaller.shared.crypto[indexPath.row]
-        }
-
-        let price = crypto.price_usd ?? 0
-        let formatter = self.numberFormatter
-        let priceString = formatter.string(from: NSNumber(value: price))
-
-        if isSearch() {
-            cell.nameLabel.text = crypto.name
-            cell.symbolLabel.text = crypto.asset_id
-            cell.priceLabel.text = priceString
-            let url = URL(string: APICaller.shared.icons.filter({ icon in
-                icon.asset_id == crypto.asset_id
-            }).first?.url ?? "")
-            cell.iconImageView.kf.setImage(with: url, placeholder: UIImage(named: "unknowed"))
-        } else {
-            cell.configure(with: viewModels[indexPath.row])
+            cell.configure(with: allItems[indexPath.row])
         }
         
         return cell
@@ -115,9 +99,10 @@ extension CryptoViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isSearch() {
-            return APICaller.shared.cryptosFiltered.count
+            return currentItems.count
+        } else {
+            return allItems.count
         }
-        return APICaller.shared.crypto.count
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -131,7 +116,10 @@ extension CryptoViewController: UISearchResultsUpdating {
     }
     
     func filterSearchCrypto(text: String) {
-        APICaller.shared.filterCryptos(text: text)
+        let searchString = text.lowercased()
+        currentItems = allItems.filter {
+            $0.name.lowercased().contains(searchString)
+        }
         tableView.reloadData()
     }
     

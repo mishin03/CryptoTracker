@@ -107,18 +107,5 @@ class CryptoTableViewCell: UITableViewCell {
         symbolLabel.text = viewModel.symbol
         priceLabel.text = viewModel.price
         iconImageView.kf.setImage(with: viewModel.iconUrl, placeholder: UIImage(named: "unknowed"))
-//        if let data = viewModel.iconData {
-//            iconImageView.image = UIImage(data: viewModel.iconData ?? data)
-//        } else
-//            if let url = viewModel.iconUrl {
-//            let task = URLSession.shared.dataTask(with: url) { data, _, _ in
-//                guard let data = data else { return }
-//                viewModel.iconData = data
-//                DispatchQueue.main.async {
-//                    self.iconImageView.image = UIImage(data: viewModel.iconData ?? data)
-//                }
-//            }
-//            task.resume()
-//        }
     }
 }
